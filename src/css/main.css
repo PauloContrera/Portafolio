@@ -370,9 +370,9 @@ flex-flow: column;
     }
     
     .GrillaInicio-navegacion{
-        grid-template-columns: 90%;
-        margin-bottom: 10em;
+        grid-template-columns: 100%;
         margin-left: 0em;
+        padding: 1em 1em 10em 1em;
     }
     
     .sobre-mi{
@@ -473,8 +473,9 @@ flex-flow: column;
         height: 30px;
        width: 30px;
      }
+
     .GrillaInicio-navegacion{
-        grid-template-columns: 100%;
+        padding: 1em 0em 10em 0em;
     }
     table{
         font-size: 0.7em;
