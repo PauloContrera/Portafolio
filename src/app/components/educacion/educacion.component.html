@@ -1,0 +1,45 @@
+<div class="experiencia">
+  <div class="titulo">
+    <h2>Educacion</h2>
+
+  </div>
+<div>
+  <table class="table">
+    <tbody>
+      <tr class="tabla" *ngFor="let Educacion of educacion">
+        
+        <div class="contenido" data-aos="fade-down">
+          <div class="contenido-imagen">
+            <img src="{{Educacion.img}}" alt="{{Educacion.nombre}} en {{Educacion.lugar}}">
+          </div>
+          <div class="contenidoTexto">
+            <h3 class="titulo">
+              {{Educacion.nombre}}
+            </h3>
+            <h4 class="texto">
+              {{Educacion.texto}}
+            </h4>
+            <div class="fechas">
+              {{Educacion.desde}}
+              <p>-</p>
+              {{Educacion.hasta}}
+            </div>
+            <h5 class="lugar">
+              {{Educacion.lugar}}
+            </h5>
+
+          </div>
+
+
+        </div>
+      </tr>
+
+
+
+
+
+    </tbody>
+  </table>
+</div>
+
+</div>

@@ -1,0 +1,34 @@
+<section class="experiencia">
+  <div class="titulo">
+    <h2 class="titulo-seo">Experiencia laboral</h2>
+  </div>
+  <div>
+    <table class="table">
+      <tbody>
+        <tr class="tabla" *ngFor="let Experiencia of experiencia">
+          <article class="contenido" data-aos="fade-down">
+            <div class="contenido-imagen">
+              <img src="{{Experiencia.img.src}}" alt="Logo de {{Experiencia.lugar}}">
+            </div>
+            <div class="contenidoTexto">
+              <h3 class="titulo">
+                {{Experiencia.nombre}}
+              </h3>
+              <p class="descripcion">
+                {{Experiencia.texto}}
+              </p>
+              <div class="fechas">
+                {{Experiencia.desde}}
+                <p>-</p>
+                {{Experiencia.hasta}}
+              </div>
+              <h5 class="lugar">
+                {{Experiencia.lugar}}
+              </h5>
+            </div>
+          </article>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

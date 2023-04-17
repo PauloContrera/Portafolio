@@ -1,0 +1,22 @@
+<section class="acerca-de-mi" itemscope itemtype="https://schema.org/Person">
+
+<div class="acerca-de-mi">
+  <div class="titulo">
+    <h2>Acerca de mi</h2>
+  </div>
+
+  <div class="principal" data-aos="fade-down" *ngFor="let persona of acercade">
+    <figure class="foto">
+      <img src="{{persona.img}}" alt="Foto de Paulo Contrera" itemprop="image">
+    </figure>
+    <div class="texto">
+      <h3 class="nombre" itemprop="name">{{persona.nombre}}</h3>
+      <div class="texto-extra" itemprop="description">
+        <p>{{persona.texto}}</p>
+      <p>{{persona.texto2}}</p>
+      <p>{{persona.texto3}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
